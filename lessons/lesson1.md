@@ -1,4 +1,4 @@
-A string in C (also known as C string) is an array of characters, followed by a NULL character. To represent a string, a set of characters are enclosed within double quotes ("). The C string "Look Here" would look like as follows in memory:
+ক্যারেক্টার অ্যারে দিয়ে সি তে স্ট্রিং বানানো হয় (যাকে সি স্ট্রিং-ও বলে) যার শেষে একটা নাল ক্যারেক্টার (NULL) থাকে। কিছু ক্যারেক্টারের দুই পাশে ডাবল কোটেশন (") দিয়ে স্ট্রিং বানানো হয়। একটা সি স্ট্রিং যদি "Look Here" হয় সেটা মেমোরি থাকে এভাবে:
 
 ```
 -----------------------------------------
@@ -6,7 +6,7 @@ A string in C (also known as C string) is an array of characters, followed by a 
 -----------------------------------------
 ```
 
-It's an array of 10 characters.
+এটা ১০টা ক্যারেক্টারের একটা অ্যারে।
 
 In this tutorial, only single byte characters are considered. But same concept can be expanded for multi byte characters. That's useful for writing programs that uses non-English characters.
 
