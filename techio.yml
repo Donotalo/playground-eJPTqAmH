@@ -1,18 +1,18 @@
-title: How to play with strings in C
+title: সি স্ট্রিং নিয়ে কারসাজি
 plan:
 - title: সি তে স্ট্রিং বলতে কি বোঝায়
   statement: lessons/lesson1.md
-- title: Safety First
+- title: প্রোগ্রামের নিরাপত্তা প্রোগ্রামারের হাতে
   statement: lessons/lesson2.md
-- title: String Length, String Comparison
+- title: স্ট্রিং-এর দৈর্ঘ্য, তুলনা
   statement: lessons/lesson3.md
-- title: String Copy
+- title: স্ট্রিং কপি
   statement: lessons/lesson4.md
-- title: String Concatenation
+- title: স্ট্রিং জোড়া দেয়া
   statement: lessons/lesson5.md
-- title: Search Within A String
+- title: স্ট্রিং-এর ভিতর কিছু খুঁজে বের করা
   statement: lessons/lesson6.md
-- title: String Split
+- title: স্ট্রিং ভাঙা
   statement: lessons/lesson7.md
-- title: Array Of C String
+- title: সি স্ট্রিং-এর অ্যারে
   statement: lessons/lesson8.md
