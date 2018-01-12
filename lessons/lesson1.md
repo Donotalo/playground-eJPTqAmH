@@ -8,17 +8,19 @@
 
 এটা ১০টা ক্যারেক্টারের একটা অ্যারে।
 
-In this tutorial, only single byte characters are considered. But same concept can be expanded for multi byte characters. That's useful for writing programs that uses non-English characters.
+শুধু এক বাইট নেয় এমন ক্যারেক্টার নিয়ে এই টিউটোরিয়াল বানানো হয়েছে। এই টিউটোরিয়ালের ধারণাগুলো পাঠক চাইলে মাল্টি বাইট ক্যারেক্টারের জন্যও ব্যবহার করতে পারবে। ইংরেজী ছাড়া অন্য ভাষায় স্ট্রিং বানাতে চাইলে মাল্টি বাইট ক্যারেক্টার প্রয়োজন হয়।
 
-# How to initialize a variable with C string
+# ভেরিয়েবল যেটা কিনা সি স্ট্রিং হিসেবে ব্যবহার করা যায়
 
-There are different ways to initialize a variable to access C string.
+কয়েক ভাবে ভেরিয়েবল ইনিশিয়ালাইয করা যায় সি স্ট্রিং ব্যবহার করার জন্য।
 
 ```C
 char *char_ptr = "Look Here";
 ```
 
 This initializes `char_ptr` to point to the first character of the **read-only** string `"Look Here"`. Yes, a C string initialized through a character pointer cannot be modified. When a C string is initialized this way, trying to modify any character pointed to by `char_ptr` is **undefined behaviour**. An undefined behaviour means that when a compiler encounters anything that triggers undefined behaviour, it is allowed to do anything it seems appropriate. For maximum compatibility of your program, make sure to avoid any undefined behaviour.
+
+এই উদাহরণে `char_ptr` একটি রিড-ওনলি স্ট্রিং `"Look Here"`-এর প্রথম ক্যারেক্টারকে নির্দেশ করছে। ক্যারেক্টার পয়েণ্টার দিয়ে ইনিশিয়ালাইয করা একটা সি স্ট্রিং পরিবর্তন করা যায় না। `char_ptr` দিয়ে নির্দেশ করা স্ট্রিং-এর কোন ক্যারেক্টার পরিবর্তন করার চেষ্টা করলে সেটা হবে **আনডিফাইন্ড বিহেভিওর**।
 
 For example, the following C code crashes when compiled in Visual C++ 2017 when the commented out line is un-commented and the code is executed:
 
